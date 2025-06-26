@@ -17,7 +17,7 @@ def lambda_handler(event, context): #funcion principal que AWS Lambda ejecuta au
     data['procesado'] = True
 
     # Nombre del bucket de destino
-    bucket_landing = 'AQUI_VA_TU_BUCKET_LANDING'
+    bucket_landing = 'first-landing-2025'
     key_landing = key.replace('.json', '_procesado.json')
 
     # Guardar el nuevo archivo
