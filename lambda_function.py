@@ -13,8 +13,8 @@ def lambda_handler(event, context): #funcion principal que AWS Lambda ejecuta au
     content = obj['Body'].read().decode('utf-8')
     data = json.loads(content)
 
-    # Agregar marca de procesamiento
-    data['procesado'] = True
+    # Agregar marca de procesamiento / Dio error
+    #data['procesado'] = True
 
     # Nombre del bucket de destino
     bucket_landing = 'first-landing-2025'
